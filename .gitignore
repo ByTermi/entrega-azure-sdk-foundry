@@ -1,0 +1,62 @@
+# ════════════════════════════════════════════════════════════════
+# ARCHIVOS A IGNORAR EN GIT
+# ════════════════════════════════════════════════════════════════
+
+# Variables de entorno con credenciales reales
+.env
+.env.local
+.env.*
+.env.*.local
+
+# Archivos de configuración sensible
+*.key
+*.pem
+credentials.json
+
+# Archivos multimedia (imágenes, audio)
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.mp3
+*.wav
+*.m4a
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Entornos virtuales
+venv/
+ENV/
+env/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Node modules (si lo necesitas)
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# Archivos temporales
+temp/
+tmp/
+*.tmp
