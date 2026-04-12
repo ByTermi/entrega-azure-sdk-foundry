@@ -1,19 +1,36 @@
 # ════════════════════════════════════════════════════════════════
-# ARCHIVOS A IGNORAR EN GIT
+# WHITELIST: Solo permitir archivos específicos
 # ════════════════════════════════════════════════════════════════
 
-# Variables de entorno con credenciales reales
+# Ignorar TODO por defecto
+*
+*/
+!.gitignore
+
+# ════════════════════════════════════════════════════════════════
+# EXCEPCIONES: Archivos que SÍ subir a git
+# ════════════════════════════════════════════════════════════════
+
+# Notebooks de práctica (PERMITIDOS)
+!01_text_json_guardrails_BACKUP_ORIGINAL.ipynb
+!02_reasoning_function_calling.ipynb
+!03_multimodal_images_audio.ipynb
+
+# Archivo de historial de chat (PERMITIDO)
+!chat_history.txt
+
+# CLI de chatbot (PERMITIDO)
+!chatbot_cli.py
+
+# ════════════════════════════════════════════════════════════════
+# IGNORAR TODO LO DEMÁS
+# ════════════════════════════════════════════════════════════════
+
+# .env y configuración
 .env
-.env.local
 .env.*
-.env.*.local
 
-# Archivos de configuración sensible
-*.key
-*.pem
-credentials.json
-
-# Archivos multimedia (imágenes, audio)
+# Imágenes y audio
 *.jpg
 *.jpeg
 *.png
@@ -22,41 +39,15 @@ credentials.json
 *.wav
 *.m4a
 
-# Caché de Python
+# Otros notebooks
+*.ipynb
+
+# Caché y temporales
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-
-# Entornos virtuales
-venv/
-ENV/
-env/
-.venv
-
-# IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
+.ipynb_checkpoints/
+*.pyc
 .DS_Store
 Thumbs.db
-
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb_checkpoints
-
-# Node modules (si lo necesitas)
-node_modules/
-
-# Logs
 *.log
-logs/
-
-# Archivos temporales
-temp/
 tmp/
 *.tmp
