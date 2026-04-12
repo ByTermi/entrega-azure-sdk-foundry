@@ -12,7 +12,7 @@
 # ════════════════════════════════════════════════════════════════
 
 # Notebooks de práctica (PERMITIDOS)
-!01_text_json.ipynb
+!01_text_json_guardrails_BACKUP_ORIGINAL.ipynb
 !02_reasoning_function_calling.ipynb
 !03_multimodal_images_audio.ipynb
 
